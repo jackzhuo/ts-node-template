@@ -7,7 +7,11 @@
     "resolveJsonModule": true, // Allows importing JSON files
     "outDir": "./dist",
     "rootDir": "./src",
-    "strict": true
+    "baseUrl": ".",
+    "strict": true,
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
